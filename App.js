@@ -18,15 +18,15 @@ export default function App() {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={estilos.container}>
         <View style={estilos.cabecalho}>
-          <Text>Cabeçalho</Text>
+          <Text style={estilos.textHeader}>Cabeçalho</Text>
         </View>
 
         <View style={estilos.conteudo}>
-          <Text>Conteúdo</Text>
+          <Text style={estilos.textMain}>Conteúdo</Text>
         </View>
 
         <View style={estilos.rodape}>
-          <Text>Rodapé</Text>
+          <Text style={estilos.textFooter}>Rodapé</Text>
           <Button title="Toca aqui!" onPress={vai} />
         </View>
       </SafeAreaView>
@@ -58,5 +58,22 @@ const estilos = StyleSheet.create({
   rodape: {
     backgroundColor: "orange",
     flex: 0.6,
+  },
+  textHeader: {
+    color: "blue",
+    fontWeight: "bold",
+    fontSize: 18,
+    textAlign: "center",
+  },
+  textMain: {
+    fontWeight: "bold",
+    fontSize: 15,
+    textAlign: "auto",
+  },
+  textFooter: {
+    color: "darkblue",
+    fontWeight: "bold",
+    fontSize: 16,
+    textAlign: "center",
   },
 });
