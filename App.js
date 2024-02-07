@@ -38,6 +38,8 @@ const estilos = StyleSheet.create({
   container: {
     backgroundColor: "lightblue",
     flex: 1,
+    // justifyContent: "center",
+    // flexDirection: "row-reverse" / O padrão é column
   },
   cabecalho: {
     backgroundColor: "lightgreen",
