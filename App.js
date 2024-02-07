@@ -43,11 +43,20 @@ const estilos = StyleSheet.create({
   },
   cabecalho: {
     backgroundColor: "lightgreen",
+    flex: 0.4,
   },
   conteudo: {
     backgroundColor: "yellow",
+    flex: 4,
+    width: "90%",
+    marginLeft: "auto",
+    marginRight: "auto",
+    borderRadius: 10,
+    marginBottom: 4,
+    marginTop: 4,
   },
   rodape: {
     backgroundColor: "orange",
+    flex: 0.6,
   },
 });
