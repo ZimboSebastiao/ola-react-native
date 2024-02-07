@@ -3,6 +3,7 @@ import {
   Button,
   SafeAreaView,
   StatusBar,
+  StyleSheet,
   Text,
   View,
 } from "react-native";
@@ -15,15 +16,16 @@ export default function App() {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <View>
+      <SafeAreaView style={estilos.container}>
+        <View style={estilos.cabecalho}>
           <Text>Cabeçalho</Text>
         </View>
 
-        <View>
+        <View style={estilos.conteudo}>
           <Text>Conteúdo</Text>
         </View>
-        <View>
+
+        <View style={estilos.rodape}>
           <Text>Rodapé</Text>
           <Button title="Toca aqui!" onPress={vai} />
         </View>
@@ -31,3 +33,19 @@ export default function App() {
     </>
   );
 }
+
+const estilos = StyleSheet.create({
+  container: {
+    backgroundColor: "lightblue",
+    flex: 1,
+  },
+  cabecalho: {
+    backgroundColor: "lightgreen",
+  },
+  conteudo: {
+    backgroundColor: "yellow",
+  },
+  rodape: {
+    backgroundColor: "orange",
+  },
+});
